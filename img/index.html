@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Персональный сайт Ильи Фомко</title>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#a73412">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div id="order-call-menu" class="arise-menu">
+        <form class="arise-menu__form" id="order-call-menu__form" name="order-call-menu__form">
+            <div class="arise-menu__container">
+                <div class="arise-menu__text">Имя:</div>
+                <input type="text" id="order-call-menu__name" class="arise-menu__input arise-menu__name">
+            </div>
+            <div class="arise-menu__container">
+                <div class="arise-menu__text">Email:</div>
+                <input type="text" id="order-call-menu__email" class="arise-menu__input arise-menu__email">
+            </div>
+            <div class="arise-menu__container">
+                <div class="arise-menu__text">Номер телефона:</div>
+                <input type="text" id="order-call-menu__phone" class="arise-menu__input arise-menu__phone" maxlength="18">
+            </div>
+            <button id="order-call-menu__btn" class="arise-menu__btn">Заказать звонок</button>
+        </form>
+    </div>
+    <div id="learn-more-menu" class="arise-menu">
+        <form class="arise-menu__form" id="learn-more-menu__form" name="learn-more-menu__form">
+            <div class="arise-menu__container">
+                <div class="arise-menu__text">Имя:</div>
+                <input type="text" id="learn-more-menu__name" class="arise-menu__input arise-menu__name">
+            </div>
+            <div class="arise-menu__container">
+                <div class="arise-menu__text">Email:</div>
+                <input type="text" id="learn-more-menu__email" class="arise-menu__input arise-menu__email">
+            </div>
+            <div class="arise-menu__container">
+                <div class="arise-menu__text">Номер телефона:</div>
+                <input type="text" id="learn-more-menu__phone" class="arise-menu__input arise-menu__phone" maxlength="18">
+            </div>
+            <button id="learn-more-menu__btn" class="arise-menu__btn">Узнать больше</button>
+        </form>
+    </div>
+    <div id="know-price-menu" class="arise-menu">
+        <form class="arise-menu__form" id="know-price-menu__form" name="know-price-menu__form">
+            <div class="arise-menu__container">
+                <div class="arise-menu__text">Имя:</div>
+                <input type="text" id="know-price-menu__name" class="arise-menu__input arise-menu__name">
+            </div>
+            <div class="arise-menu__container">
+                <div class="arise-menu__text">Email:</div>
+                <input type="text" id="know-price-menu__email" class="arise-menu__input arise-menu__email">
+            </div>
+            <div class="arise-menu__container">
+                <div class="arise-menu__text">Номер телефона:</div>
+                <input type="text" id="know-price-menu__phone" class="arise-menu__input arise-menu__phone" maxlength="18">
+            </div>
+            <button id="know-price-menu__btn" class="arise-menu__btn">Узнать стоимость</button>
+        </form>
+    </div>
+    <div id="order-project-menu" class="arise-menu">
+        <form class="arise-menu__form" id="order-project-menu__form" name="order-project-menu__form">
+            <div class="arise-menu__container">
+                <div class="arise-menu__text">Имя:</div>
+                <input type="text" id="order-project-menu__name" class="arise-menu__input arise-menu__name">
+            </div>
+            <div class="arise-menu__container">
+                <div class="arise-menu__text">Email:</div>
+                <input type="text" id="order-project-menu__email" class="arise-menu__input arise-menu__email">
+            </div>
+            <div class="arise-menu__container">
+                <div class="arise-menu__text">Номер телефона:</div>
+                <input type="text" id="order-project-menu__phone" class="arise-menu__input arise-menu__phone" maxlength="18">
+            </div>
+            <button id="order-project-menu__btn" class="arise-menu__btn">Заказать проект</button>
+        </form>
+    </div>
+    <header class="header">
+        <div class="container header-container">
+            <div class="nav-burger">
+                <div class="nav-burger__item"></div>
+                <div class="nav-burger__item"></div>
+                <div class="nav-burger__item nav-burger__item_last"></div>
+            </div>
+            <button class="nav-burger-close">
+                <span class="nav-burger-close__line1"></span>
+                <span class="nav-burger-close__line2"></span>
+            </button>
+            <nav class="navigation">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#services">Услуги</a></li>
+                    <li class="nav-item"><a href="#portfolio">Портфолио</a></li>
+                    <li class="nav-item"><a href="#price">Стоимость</a></li>
+                </ul>
+            </nav>
+            <div class="order-call">
+                <p class="order-call__number">+7 (951) 112-10-23</p>
+                <button id="header__order-call-btn" class="order-call__btn">Заказать звонок</button>
+                <img id="order-call__icon" src="img/order-call-icon.png" alt="order call icon" class="order-call__icon">
+            </div>
+        </div>
+        <div class="nav-burger-menu">
+            <div class="container">
+                <ul class="nav-burger-menu__container">
+                    <li class="nav-burger-menu__li"><a href="#services">Услуги</a></li>
+                    <li class="nav-burger-menu__li"><a href="#portfolio">Портфолио</a></li>
+                    <li class="nav-burger-menu__li"><a href="#price">Стоимость</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="intro-section">
+            <div class="intro-fly-items__container">
+                <div class="intro-fly-elem intro-fly-elem__summ">{ }</div>
+                <div class="intro-fly-elem intro-fly-elem__heshtag">#</div>
+                <div class="intro-fly-elem intro-fly-elem__scob">&lt;/&gt;</div>
+                <div class="intro-fly-elem intro-fly-elem__scob_2">&lt;/&gt;</div>
+                <div class="intro-fly-elem intro-fly-elem__div_1">&lt;div&gt;</div>
+                <div class="intro-fly-elem intro-fly-elem__div_2">&lt;div&gt;</div>
+            </div>
+            <div class="intro-section__human-shadow">
+                <div class="intro-section__human-bg">
+                    <div class="container">
+                        <h1 class="intro-title">Илья Фомко</h1>
+                        <h2 class="intro-suptitle">Frontend-разработчик и&nbsp;веб-верстальщик</h2>
+                        <button id="intro-section__learn-more" class="order-btn">Узнать больше</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section id="services" class="main-section">
+                <h3 class="section-title">Что я делаю</h3>
+                <div class="section-container">
+                    <ul class="section-ul section-ul__what-i-do">
+                        <li class="section-ul-item first">Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности</li>
+                        <li class="section-ul-item second">Адаптивная вёрстка под&nbsp;все браузеры и устройства</li>
+                        <li class="section-ul-item third">Frontend–разработка и&nbsp;программирование</li>
+                        <li class="section-ul-item fourth">Исправление и доработка существующей вёрстки</li>
+                    </ul>
+                </div>
+                <button id="know-section-price" class="order-btn order-btn__section">Узнать стоимость</button>
+            </section>
+            <section id="portfolio" class="main-section">
+                <h3 class="section-title">Примеры моих работ</h3>
+                <div class="section-container my-works-examples__container">
+                    <button class="btn-prev"><img src="img/arrow.png" alt="Button of previus item"></button>
+                    <ul class="section-ul section-ul__slider">
+                        <li class="section-ul-item active-example activeMob">
+                            <a href="#">
+                                <img src="img/example-1.jpg" alt="icon project" class="icon-project">
+                                <p>1</p>
+                            </a>
+                        </li>
+                        <li class="section-ul-item active-example">
+                            <a href="#">
+                                <img src="img/example-2.jpg" alt="icon project" class="icon-project">
+                                <p>2</p>
+                            </a>
+                        </li>
+                        <li class="section-ul-item active-example">
+                            <a href="#">
+                                <img src="img/example-3.jpg" alt="icon project" class="icon-project">
+                                <p>3</p>
+                            </a>
+                        </li>
+                        <li class="section-ul-item">
+                            <a href="#">
+                                <img src="img/example-1.jpg" alt="icon project" class="icon-project">
+                                <p>4</p>
+                            </a>
+                        </li>
+                        <li class="section-ul-item">
+                            <a href="#">
+                                <img src="img/example-2.jpg" alt="icon project" class="icon-project">
+                                <p>5</p>
+                            </a>
+                        </li>
+                        <li class="section-ul-item">
+                            <a href="#">
+                                <img src="img/example-3.jpg" alt="icon project" class="icon-project">
+                                <p>6</p>
+                            </a>
+                        </li>
+                        <li class="section-ul-item">
+                            <a href="#">
+                                <img src="img/example-3.jpg" alt="icon project" class="icon-project">
+                                <p>7</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="btn-next"><img src="img/arrow.png" alt="Button of next item"></button>
+                </div>
+                <div class="slider-portfolio-switch">
+                    <button class="slider-portfolio-switch__btn slider-portfolio-switch__btn_active slider-portfolio-switch__btn_show"></button>
+                    <button class="slider-portfolio-switch__btn slider-portfolio-switch__btn_show"></button>
+                    <button class="slider-portfolio-switch__btn slider-portfolio-switch__btn_show"></button>
+                </div>
+                <button id="main__order-project-menu_btn" class="order-btn order-btn__section">Заказать проект</button>
+            </section>
+        </div>
+        <section id="price" class="section-price">
+            <div class="section-price__fly-elems-container_elem section-price__fly-elems-container_summ1">{ }</div>
+            <div class="section-price__fly-elems-container_elem section-price__fly-elems-container_heshtag">#</div>
+            <div class="section-price__fly-elems-container_elem section-price__fly-elems-container_scob">&lt;/&gt;</div>
+            <div class="section-price__fly-elems-container_elem section-price__fly-elems-container_summ2">{ }</div>
+            <div class="section-price__fly-elems-container_elem section-price__fly-elems-container_div">&lt;div&gt;</div>
+            <div class="container">
+                <h2 class="price-text">
+                    Адаптивная&nbsp;вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4&nbsp;часа.*
+                </h2>
+                <h3 class="price-suptitle">
+                    <sup class="important-thing">*</sup> Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в&nbsp;зависимости от сложности задач.
+                </h3>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <nav class="footer-nav">
+                <ul class="footer-nav__ul">
+                    <li class="footer-nav__item"><a href="#services">Услуги</a></li>
+                    <li class="footer-nav__item"><a href="#portfolio">Портфолио</a></li>
+                    <li class="footer-nav__item"><a href="#price">Стоимость</a></li>
+                </ul>
+            </nav>
+            <div class="footer-contacts">
+                <div class="footer-contacts__number">+7 (951) 112-10-23</div>
+                <div class="footer-contacts__email">ilya.fomko03@mail.ru</div>
+            </div>
+            <div class="footer-third-colomn">
+                <button id="footer__order-call_btn" class="order-call__btn footer-btn">Заказать звонок</button>
+                <ul class="footer-soc-networks">
+                    <li class="footer-soc-networks__item vk">
+                        <a href="https://vk.com/74ruiluha"></a>
+                    </li>
+                    <li class="footer-soc-networks__item facebook">
+                        <a href="https://www.facebook.com/profile.php?id=100013732931904"></a>
+                    </li>
+                    <li class="footer-soc-networks__item twitter">
+                        <a href="https://twitter.com/explore"></a>
+                    </li>
+                    <li class="footer-soc-networks__item instagram">
+                        <a href="https://www.instagram.com/neiluha/"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyrighting">&copy; Илья Фомко 2020 - 2022</div>
+    </footer>
+</body>
+
+</html>
